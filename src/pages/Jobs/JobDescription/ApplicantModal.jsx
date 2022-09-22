@@ -190,7 +190,6 @@ const ApplicantModal = ({ job }) => {
                   type="text"
                   placeholder="Hyperlink"
                   defaultValue={userInfo?.resume}
-                  name="userResume"
                   className="text-black border rounded-lg py-1 text-lg pl-3 hover:border-primary duration-300"
                   {...register("resume", {
                     required: {
@@ -256,6 +255,7 @@ const ApplicantModal = ({ job }) => {
                 </h4>
                 <textarea
                   type="text"
+                  name="userCoverLetter"
                   rows={4}
                   placeholder="Add a cover letter"
                   className="text-black border rounded-lg py-1 text-xl pl-3 hover:border-primary duration-300"
